@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#Tech Stacks
+- HTML, CSS, React Js
+
+# Steps to Run
+- npm install
+- npm start
+
+# Dependencies required to Run this project
+- Axios
+- React Router Dom
+- styled components
+- react icons
+
 ## Available Scripts
 
 In the project directory, you can run:
