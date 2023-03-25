@@ -2,8 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#Tech Stacks
-- HTML, CSS, React Js
+# Tech Stacks
+- HTML
+- CSS
+- React Js
 
 # Steps to Run
 - npm install
