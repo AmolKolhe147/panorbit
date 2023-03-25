@@ -1,0 +1,31 @@
+
+
+.profileInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profileInfo h2 {
+    color: rgb(67, 65, 65);
+}
+
+/* ---------------- Profile ----------- */
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+}
+
+.profileInfo img {
+    width: 35px;
+    border-radius: 50px;
+}
+
+.profileInfo p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(56, 55, 55, 0.822);
+}
