@@ -9,7 +9,6 @@ import "../styles/homepage.css";
 import TopProfile from "../common/TopProfile";
 
 const HomePage = () => {
-
   //Get data from useContext
   const { userData, filteredUsers, setProfile, profile } = useContext(DataContext);
 
@@ -27,10 +26,9 @@ const HomePage = () => {
       <div className="homeDiv">
         {/* ------------ Render Common component LeftSideBar --------- */}
         <LeftSideBar />
-        
+
         {userData && userData.map((el) => (
             <div style={{ width: "80%" }} className="topProfile" key={el.id}>
-
               {/* ---------- TopProfile component ------- */}
               <div className="profileInfo">
                 <h2>Profile</h2>

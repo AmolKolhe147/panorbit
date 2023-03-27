@@ -41,12 +41,11 @@ const Chat = () => {
       </div>
       {isShow ? (
         <div className="showUsers">
-          {/* --------- Data maping ------ */}
-          {data &&
-            data.map((el) => (
+          {/* Iterate the users data using map to show profile and name*/}
+          {data && data.map((el) => (
               <div key={el.id}>
                 <div className="displayUsers">
-                  <img src={el.profilepicture} alt="profile image" />
+                  <img src={el.profilepicture} alt="" />
                   <p>{el.name}</p>
                 </div>
                 <hr />

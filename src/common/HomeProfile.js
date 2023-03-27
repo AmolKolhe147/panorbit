@@ -3,31 +3,26 @@ import "../styles/homeprofile.css";
 import Chat from "./Chat";
 
 const HomeProfile = (props) => {
-  const {
-    name,
-    profilepicture,
-    username,
-    email,
-    phone,
-    website,
-    company,
-    address,
-  } = props;
+  const {name, profilepicture, username,email, phone, website, company, address } = props;
 
   return (
     <div className="MainPage">
-      {/* ---------- (left side)----------- */}
+      {/* Display the content on Left Side */}
+
       <div className="left">
         <img src={profilepicture} alt="profile img" />
-        {/* ------------ (name) ----------- */}
+
+        {/* To show the name */}
+
         <p>{name}</p>
         <div className="uname">
-          <div>
+          <div className="basic">
             <h2 style={{ marginTop: "0px" }}>Username :</h2>
             <h2>e-mail :</h2>
             <h2>Phone :</h2>
             <h2>Website :</h2>
           </div>
+          {/* Display the username, email, phone and website of user */}
           <div>
             <h3 style={{ marginTop: "0px" }}>{username}</h3>
             <h3>{email}</h3>
@@ -35,8 +30,10 @@ const HomeProfile = (props) => {
             <h3>{website}</h3>
           </div>
         </div>
+
         <hr />
-        {/* --------------- (company)--------- */}
+
+        {/* To show the Company details */}
         <h2>Company</h2>
         <div className="companyDetails">
           <div>
@@ -44,6 +41,7 @@ const HomeProfile = (props) => {
             <h2>catchphrase :</h2>
             <h2>Bs :</h2>
           </div>
+          {/* To display the company name, catchPhrase and bs */}
           <div>
             <h3 style={{ paddingTop: "3px" }}>{company.name}</h3>
             <h3>{company.catchPhrase}</h3>
@@ -51,12 +49,14 @@ const HomeProfile = (props) => {
           </div>
         </div>
       </div>
-      {/* -------- (vertical line) ------ */}
+
+      {/* Create a line in between */}
       <p className="line"></p>
 
-      {/* -------- (right side)---------- */}
+      {/* Right side homepage details */}
       <div className="right">
-        {/* -----------(address)------- */}
+        {/* To display full Address */}
+
         <h2>Address:</h2>
         <div className="address">
           <div>
@@ -65,6 +65,7 @@ const HomeProfile = (props) => {
             <h2>City :</h2>
             <h2>Zipcode :</h2>
           </div>
+          {/* Display address - street, city and zipcode */}
           <div>
             <h3 style={{ marginTop: "0px" }}>{address.street}</h3>
             <h3>{address.suite}</h3>
@@ -72,18 +73,10 @@ const HomeProfile = (props) => {
             <h3>{address.zipcode}</h3>
           </div>
         </div>
-        {/* ---------- (map)---------- */}
-        <iframe
-          width="100%"
-          height="350"
-          className="Location"
-          src={`https://maps.google.com/maps?q=${address.street},t=&z=13&ie=UTF8&iwloc=&output=embed`}
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-        ></iframe>
-        {/* ---------- (geo)--------- */}
+        {/* To show the location on Google map */}
+        <iframe width="500" height="350" className="Location"
+          src={`https://maps.google.com/maps?q=${address.street},t=&z=13&ie=UTF8&iwloc=&output=embed`}></iframe>
+        {/* Geo Location */}
         <div className="geoLocation">
           <p>
             Lat : <span>{address.geo.lat}</span>
@@ -92,7 +85,7 @@ const HomeProfile = (props) => {
             Lng : <span>{address.geo.lng}</span>
           </p>
         </div>
-        {/* ------------- (chat) ---------- */}
+        {/* Chat Component */}
         <div>
           <Chat />
         </div>

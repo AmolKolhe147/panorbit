@@ -4,18 +4,15 @@ import UserDetails from "../pages/UserDetails";
 import style from "../assets/topprofile.module.css";
 
 const TopProfile = () => {
-
   // Get data from useContext
-  const { userData, setProfile, profile, filteredUsers } = useContext(DataContext); 
+  const { userData, setProfile, profile, filteredUsers } =
+    useContext(DataContext);
 
   // fetch filteredUsers data
   useEffect(() => {
-
     const ID = sessionStorage.getItem("id") || 1;
     filteredUsers(Number(ID));
-
   }, []);
-
 
   return (
     <div>

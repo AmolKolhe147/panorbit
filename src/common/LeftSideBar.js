@@ -26,23 +26,13 @@ const LeftSideBar = () => {
 
       <hr />
 
-      <NavLink
-        to="/gallery"
-        className={({ isActive }) =>
-          isActive ? style.active : style.notActive
-        }
-      >
+      <NavLink to="/gallery" className={({ isActive }) => isActive ? style.active : style.notActive }>
         <p>Gallery</p>
       </NavLink>
 
       <hr />
 
-      <NavLink
-        to="/todo"
-        className={({ isActive }) =>
-          isActive ? style.active : style.notActive
-        }
-      >
+      <NavLink to="/todo" className={({ isActive }) => isActive ? style.active : style.notActive }>
         <p>ToDo</p>
       </NavLink>
     </div>

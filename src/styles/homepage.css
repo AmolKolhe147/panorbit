@@ -1,51 +1,49 @@
-
-.homeDiv{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    gap: 25px;
+.homeDiv {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  gap: 25px;
 }
 
-.topProfile{
-    width: 93%;
-        padding: 0px 30px;
-        margin-top: 30px;
+.topProfile {
+  width: 93%;
+  padding: 0px 30px;
+  margin-top: 30px;
 }
 
 .topProfile div {
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-between;
-} 
+  align-items: center;
+  justify-content: space-between;
+}
 
 .topProfile div h2 {
-    color: rgba(39, 38, 38, 0.822);
+  color: rgba(39, 38, 38, 0.822);
 }
 
 .profileInfo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .profileInfo h2 {
-    color: rgb(67, 65, 65);
+  color: rgb(67, 65, 65);
 }
 
 .profileInfo {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
 }
 
 .profileInfo img {
-    width: 35px;
-    border-radius: 50px;
+  width: 35px;
+  border-radius: 50px;
 }
 
 .profileInfo p {
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(56, 55, 55, 0.822);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(56, 55, 55, 0.822);
 }

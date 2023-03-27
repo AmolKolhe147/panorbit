@@ -49,7 +49,7 @@
   color: rgba(39, 38, 38, 0.822);
 }
 
-.profile {
+/* .profile {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -57,7 +57,7 @@
 
 .profile > h2 {
   color: rgb(67, 65, 65);
-}
+} */
 
 .profile {
   display: flex;
